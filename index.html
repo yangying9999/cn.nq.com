@@ -7,7 +7,6 @@
 <meta name="keywords" content="网秦,网秦安全,网秦云服务">
 <meta name="description" content="网秦全球手机安全市场领导品牌，纽交所首家中国手机安全公司！最多海外客户中国手机安全产品！网秦拥有手机杀毒自主核心技术！">
 <meta name="author" content="">
-
 <!-- Styles -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -16,7 +15,6 @@
 
 <link rel="stylesheet" media="screen" href="assets/css/sequencejs-theme.modern-slide-in.css" />
 <link rel="stylesheet" media="screen" href="assets/css/flexslider.css" type="text/css" />
-
 <!-- Modernizr -->
 <!-- <script src="assets/js/modernizr.js"></script> -->
 
@@ -33,9 +31,15 @@
 </head>
 <body>
 <div class="navbar">
+    <div class="navtop">
+        <div class="container">
+            <a href="#">24/7/365 即时线上客服</a> | <a href="#">中文</a>
+        </div>
+    </div>
   <div class="navbar-inner">
-    <div class="container"> <a class="brand" href="#"><img src="images/nqlogo.png" width="131" height="30" alt="NQ" /></a>
-      <p class="navbar-text pull-right"><a href="#">Sign in</a> or <a href="#">Create account</a></p>
+    <div class="container"> <a class="brand" href="#"><img src="assets/img/nqlogo.png" width="131" height="30" alt="NQ" /></a>
+      <p class="navbar-first"><a href="#">网秦安全</a><a href="#">私密空间</a><a href="#">手机卫士</a></p>
+      <p class="navbar-text pull-right"><a href="#">个人产品</a> <a href="#">产品下载</a> <a href="#"> 求助中心</a> <a href="#">支付中心</a></p>
     </div>
   </div>
 </div>
@@ -44,97 +48,62 @@
 <div class="container-fluid header home-header">
   <div class="container">
     <div class="row">
-      <div id="sequence-theme">
-          <div id="sequence">
-              <img class="prev" src="images/bt-prev.png" alt="Previous Product" />
-              <img class="next" src="images/bt-next.png" alt="Next Product" />
-              <ul class="sequence-list">
-                  <li class="animate-in">
-                      <div class="span6 offset1">
+	  <div id="sequence-theme">
+      	  <div id="sequence">
+              <img alt="Previous Product" src="assets/img/bt-prev.png" class="prev" style="display: inline;">
+              <img alt="Next Product" src="assets/img/bt-next.png" class="next" style="display: inline;">
+              <ul class="sequence-list" style="width: 100%; height: 100%; position: relative;">
+                  <li class="animate-out" style="display: block; transition-duration: 0s; transition-delay: 0s; width: 100%; height: 100%; position: absolute; z-index: 1; opacity: 1;">
+                      <div class="span6 offset1" style="">
                         <h2>Protect your phone</h2>
                         <h3>It's the most personal computer you own</h3>
                         <div class="win-google">
-                          <a href="#"><img src="images/google-play.png" /></a>
-                          <a href="#" class="end"><img src="images/windows-tm.png" /></a>
+                          <a href="#"><img src="assets/img/google-play.png"></a>
+                          <a class="end" href="#"><img src="assets/img/windows-tm.png"></a>
                         </div>
                       </div>
-                      <div class="span5">
-                        <h1 class="aim-phone"><img src="images/banner-aim.png" /></h1>
+                      <div class="span5" style="">
+                        <h1 class="aim-phone"><img src="assets/img/banner-aim.png"></h1>
                       </div>
                   </li>
-                  <li>
-                      <div class="span6 offset1">
+                  <li style="display: block; transition-duration: 0s; transition-delay: 0s; width: 100%; height: 100%; position: absolute; z-index: 1; opacity: 1;" class="animate-out">
+                      <div class="span6 offset1" style="">
                         <h2>Protect your phone</h2>
                         <h3>It's the most personal computer you own</h3>
                         <div class="win-google">
-                          <a href="#"><img src="images/google-play.png" /></a>
-                          <a href="#" class="end"><img src="images/windows-tm.png" /></a>
+                          <a href="#"><img src="assets/img/google-play.png"></a>
+                          <a class="end" href="#"><img src="assets/img/windows-tm.png"></a>
                         </div>
                       </div>
-                      <div class="span5">
-                        <h1 class="aim-phone"><img src="images/banner-aim.png" /></h1>
+                      <div class="span5" style="">
+                        <h1 class="aim-phone"><img src="assets/img/banner-aim.png"></h1>
                       </div>
                   </li>
-                  <li>
-                      <div class="span6 offset1">
+                  <li style="display: block; transition-duration: 0s; transition-delay: 0s; width: 100%; height: 100%; position: absolute; z-index: 3; opacity: 1;" class="animate-in">
+                      <div class="span6 offset1" style="">
                         <h2>Protect your phone</h2>
                         <h3>It's the most personal computer you own</h3>
                         <div class="win-google">
-                          <a href="#"><img src="images/google-play.png" /></a>
-                          <a href="#" class="end"><img src="images/windows-tm.png" /></a>
+                          <a href="#"><img src="images/google-play.png"></a>
+                          <a class="end" href="#"><img src="images/windows-tm.png"></a>
                         </div>
                       </div>
-                      <div class="span5">
-                        <h1 class="aim-phone"><img src="images/banner-aim.png" /></h1>
+                      <div class="span5" style="">
+                        <h1 class="aim-phone"><img src="images/banner-aim.png"></h1>
                       </div>
                   </li>
               </ul>
           </div>
-            <ul class="nav" style="display:none;">
-                <li><img src="images/tn-model1.png" alt="" /></li>
-                <li><img src="images/tn-model2.png" alt="" /></li>
-                <li><img src="images/tn-model3.png" alt="" /></li>
+            <ul style="display:none;" class="nav">
+                <li><img alt="" src="images/tn-model1.png"></li>
+                <li><img alt="" src="images/tn-model2.png"></li>
+                <li><img alt="" src="images/tn-model3.png"></li>
             </ul>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container app-tray-cont">
-  <nav id="app-tray">
-    <div class="row">
-      <div class="span12 center-align">
-        <ul>
-          <li> <a href="#">
-            <figure> <img SRC="images/apps/m_security.png" />
-              <figcaption>Mobile Security</figcaption>
-            </figure>
-            </a> </li>
-          <li> <a HREF="product/vault.html">
-            <figure> <img SRC="images/apps/m_vault.png" />
-              <figcaption>Mobile Vault</figcaption>
-            </figure>
-            </a> </li>
-          <li> <a href="#">
-            <figure> <img SRC="images/apps/fam_guardian.png" />
-              <figcaption>Family Guardian</figcaption>
-            </figure>
-            </a> </li>
-          <li> <a href="#">
-            <figure> <img SRC="images/apps/m_blocker.png" />
-              <figcaption>Call Blocker</figcaption>
-            </figure>
-            </a> </li>
-          <li id="all-products"> <a href="#">
-            <figure> <img SRC="images/apps/nq_all_products.png" />
-              <figcaption>Our Products</figcaption>
-            </figure>
-            </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
 <!-- End Header  
     ================================================== -->
 <div class="container-fluid featurecon">
@@ -153,11 +122,29 @@
         </article>
       </div>
       <div class="span4">
-        <article id="vault-messenger">
+        <article id="">
           <h3>For Enterprise</h3>
           <p>Locate your child at anytime.</p>
         </article>
       </div>
+        <div class="span4">
+          <article id="">
+            <h3>For Enterprise</h3>
+            <p>Locate your child at anytime.</p>
+          </article>
+        </div>
+        <div class="span4">
+          <article id="">
+            <h3>For Enterprise</h3>
+            <p>Locate your child at anytime.</p>
+          </article>
+        </div>
+        <div class="span4">
+          <article id="">
+            <h3>For Enterprise</h3>
+            <p>Locate your child at anytime.</p>
+          </article>
+        </div>
     </div>
   </div>
 </div>
@@ -166,7 +153,7 @@
 <div class="container-fluid culture">
   <div class="container">
     <div class="row"> 
-      <!--<img src="images/line.jpg" class="line">-->
+      <!--<img src="assets/img/line.jpg" class="line">-->
       <div class="span3">
         <h2>Our culture</h2>
       </div>
@@ -186,11 +173,11 @@
     <div class="row">
       <!--div class="span12">
         <ul>
-          <li><img src="images/streetjournal.jpg"></li>
-          <li><img src="images/tuaw.jpg"></li>
-          <li><img src="images/gizmodo.jpg"></li>
-          <li><img src="images/cnet.jpg"></li>
-          <li><img src="images/killerstartups.jpg"></li>
+          <li><img src="assets/img/streetjournal.jpg"></li>
+          <li><img src="assets/img/tuaw.jpg"></li>
+          <li><img src="assets/img/gizmodo.jpg"></li>
+          <li><img src="assets/img/cnet.jpg"></li>
+          <li><img src="assets/img/killerstartups.jpg"></li>
         </ul>
       </div-->
       <section class="slider">
@@ -199,105 +186,105 @@
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/streetjournal.jpg" /></td>
+                    <td height="160"><img src="assets/img/streetjournal.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/tuaw.jpg" /></td>
+                    <td height="160"><img src="assets/img/tuaw.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/gizmodo.jpg" /></td>
+                    <td height="160"><img src="assets/img/gizmodo.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/cnet.jpg" /></td>
+                    <td height="160"><img src="assets/img/cnet.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/killerstartups.jpg" /></td>
+                    <td height="160"><img src="assets/img/killerstartups.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/streetjournal.jpg" /></td>
+                    <td height="160"><img src="assets/img/streetjournal.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/tuaw.jpg" /></td>
+                    <td height="160"><img src="assets/img/tuaw.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/gizmodo.jpg" /></td>
+                    <td height="160"><img src="assets/img/gizmodo.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/cnet.jpg" /></td>
+                    <td height="160"><img src="assets/img/cnet.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/killerstartups.jpg" /></td>
+                    <td height="160"><img src="assets/img/killerstartups.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/streetjournal.jpg" /></td>
+                    <td height="160"><img src="assets/img/streetjournal.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/tuaw.jpg" /></td>
+                    <td height="160"><img src="assets/img/tuaw.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/gizmodo.jpg" /></td>
+                    <td height="160"><img src="assets/img/gizmodo.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/cnet.jpg" /></td>
+                    <td height="160"><img src="assets/img/cnet.jpg" /></td>
                   </tr>
                 </table>
             </li>
             <li>
                 <table width="100%" border="0">
                   <tr>
-                    <td height="160"><img src="images/killerstartups.jpg" /></td>
+                    <td height="160"><img src="assets/img/killerstartups.jpg" /></td>
                   </tr>
                 </table>
             </li>
@@ -312,22 +299,22 @@
 <div class="container-fluid modulecon">
   <div class="container">
     <div class="row bottom-modules">
-      <div class="span3"> <img src="images/Press-Releases.png" width="45" height="45" alt="Press Releases">
+      <div class="span3"> <img src="assets/img/Press-Releases.png" width="45" height="45" alt="Press Releases">
         <h4>Press Releases</h4>
         <p>Lorem ipsum dolorLorem ipsum dolor<br>
           Lorem ipsum dolorLorem ipsu</p>
         <a class="learn-more" href="#">Learn More</a> </div>
-      <div class="span3"> <img src="images/Investor-Relations.png" width="45" height="45" alt="Investor Relations">
+      <div class="span3"> <img src="assets/img/Investor-Relations.png" width="45" height="45" alt="Investor Relations">
         <h4>Investor Relations</h4>
         <p>Lorem ipsum dolorLorem ipsum dolor<br>
           Lorem ipsum dolorLorem ipsu</p>
         <a class="learn-more" href="#">Learn More</a> </div>
-      <div class="span3"> <img src="images/Store-Presence.png" width="45" height="45" alt="Store Presence">
+      <div class="span3"> <img src="assets/img/Store-Presence.png" width="45" height="45" alt="Store Presence">
         <h4>Press Releases</h4>
         <p>Lorem ipsum dolorLorem ipsum dolor<br>
           Lorem ipsum dolorLorem ipsu</p>
         <a class="learn-more" href="#">Learn More</a> </div>
-      <div class="span3 end-item"> <img src="images/Talk-With-NQ.png" width="45" height="45" alt="Press Releases">
+      <div class="span3 end-item"> <img src="assets/img/Talk-With-NQ.png" width="45" height="45" alt="Press Releases">
         <h4>Talk With NQ</h4>
         <p>Lorem ipsum dolorLorem ipsum dolor<br>
           Lorem ipsum dolorLorem ipsu</p>
@@ -337,7 +324,7 @@
 </div>
 <div class="container">
   <footer>
-    <div class="row ul-list">
+    <div class="row ul-list about">
       <div class="span2 offset1">
         <h6><a href="#">Products</a></h6>
         <ul>
@@ -394,8 +381,8 @@
     <div class="row footer-bottom">
       <ul>
         <li>Made in Dallas Texas &nbsp;&nbsp;&nbsp;</li>
-        <li><a href="#"><img src="images/twiter.png" width="20" height="16" alt="twiter"></a></li>
-        <li><a href="#"><img src="images/facebook.png" width="20" height="16" alt="facebook"></a></li>
+        <li><a href="#"><img src="assets/img/twiter.png" width="20" height="16" alt="twiter"></a></li>
+        <li><a href="#"><img src="assets/img/facebook.png" width="20" height="16" alt="facebook"></a></li>
       </ul>
     </div>
   </footer>
@@ -406,7 +393,7 @@
 
 <script src="assets/js/scale.fix.js"></script>
 
-<script src="assets/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
 
 <script src="assets/js/sequence.jquery-min.js"></script>
 <script src="assets/js/sequencejs-options.modern-slide-in.js"></script>
