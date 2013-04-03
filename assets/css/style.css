@@ -1,10 +1,8 @@
 @import url("http://fast.fonts.com/cssapi/a3b5b8e0-da21-43b2-9cb8-7214ee8019b1.css");
 body {
-	background: url("../img/nq_color_strip.png") repeat-x scroll center top #fff;
 	color: #666666;
 	font: 300 14px/1.5 "FrutigerLTW01-55Roman", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
-	padding-top: 1px;
 	padding-left:0;
 	padding-right:0;
 	overflow-x:hidden;
@@ -17,15 +15,17 @@ p {
 	font-family:"FrutigerLTW01-45Light";
 }
 .navbar-inner {
-	background:#fff;
+    background: #fff url(../img/nq_color_strip.png) center bottom no-repeat;
+    padding: 6px 0 12px 0;
 }
+
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
 	box-shadow: none;
 }
 .header {
 	background: url("../img/bcg.jpg") center 0 no-repeat;
 	background-size: cover;
-	height:518px;
+	height:466px;
 	color: #fff;
 }
 .header h2 {
@@ -42,10 +42,29 @@ p {
 .win-google a img { margin:0;}
 .win-google a.end img { margin-top:4px;}
 .header img { margin:65px 0 0 20px;}
+.navbar{position: relative;}
+.navtop{margin-right:-40px;position:relative;z-index:3;background: #6d6d6d;text-align: right;padding: 2px 0; color: #ccc;}
+.navtop a{margin:0 20px;font-size:12px;color: #cccccc;}
 .navbar-first{width: 400px;float: left;margin: 20px 10px 0 100px;}
-.navbar-first a{margin: 20px 30px 10px 10px}
-.navbar-text { background:url(../img/divider.png) left center no-repeat; float: right;padding-left: 0;font-size: 12px;margin-top: 10px;}
-.navbar-text a {display:block;float:left;margin-left: 20px; color:#666;}
+.navbar-first a{margin: 20px 30px 10px 10px;font-weight:bold;font-family: "微软雅黑";font-size: 16px;}
+.navbar-text {position:relative;float: right;padding-left: 0;font-size: 12px;margin-top: 5px;}
+.navbar-text a {display:block;float:left;margin-left: 20px; color:#666;background: #fff;}
+.navbar-text .personal-products .active span, .navbar-text .personal-products .active-d span{padding-right:15px;background: url(../img/arrow-d.png) right 15px no-repeat;padding-top:8px;float: left;position: relative;}
+/*导航*/
+.navbar-inner .container{background: none;}
+.navbar .brand{font-weight:bold;font-family: "微软雅黑";font-size: 16px;}
+.navbar .logo{float: left; margin-right: 80px;}
+.navbar .float_right{float: right;padding-top: 5px;}
+.navbar .float_right a.brand{font-size: 12px;display: block;float: left;font-family: "宋体";font-weight: normal;}
+.personal-products .active, .personal-products .active-d{padding:0 10px 10px 10px;position: relative;border-top: 2px solid #fff; border-left: 1px solid #fff;border-right: 1px solid #fff;}
+.personal-products .active-d{position: relative;border-top: 2px solid #ffb800; border-left: 1px solid #ffb800;border-right: 1px solid #ffb800;}
+
+.personal-products ul, .personal-products li{float: left;}
+.personal-products ul{margin: 0;}
+.navbar-text .personal-products .float_layer{position: absolute;top:40px;left:20px;border: 1px solid #ffb800;width: 220px}
+.navbar-text .personal-products .float_layer span{display:block;width: 200px;line-height:25px;padding-left:20px;border-bottom: 1px solid #ccc;}
+.navbar-text .float_layer a{margin: 0;}
+.dropdown-toggle{font-size: 12px;}
 
 #app-tray {
   background: #fff;
@@ -126,14 +145,26 @@ p {
   box-shadow: 0 1px 2px rgba(0,0,0,.27);
   -moz-box-shadow: 0px 1px 2px #a2a09e;
   text-align:center;
+  font-size: 12px;
+  color: #666;
 }
-h3{ font-size:20px; color:#36495a; font-weight:normal; padding:0; margin:0; line-height:normal;}
+#features  p{display: block;width: 100%;margin-bottom: 6px;}
+#features  .product{margin:10px 0 0 40px;text-align: left;font-size: 14px;}
+#features  .product li{margin-bottom: 6px;}
+#features  p.pull-left{text-align: left;}
+#features  #virus p.pull-left{font-size: 13px;line-height: 20px;text-indent: 2em;}
+#features  .more{float: right;color: #318ce6;}
+h3{margin:0 0 5px 0; font-size:20px; font-weight:normal; padding:0;  line-height:normal;font-family: "黑体";color: #27475a;}
+#features article a{color: #666;}
 #features #whats-new, #features #sync-space, #features #vault-messenger {
   background-size: contain;
 }
 
 #features #whats-new {
   background: white url("../img/what-snew.png") bottom no-repeat;
+}
+#features #virus {
+  background: white url("../img/virus.jpg") bottom no-repeat;
 }
 
 #features #sync-space {
@@ -149,10 +180,20 @@ h3{ font-size:20px; color:#36495a; font-weight:normal; padding:0; margin:0; line
 	background-size: cover;
 	min-height: 188px;
 	color: #fff;
-	
 }
+#features article p.level{
+    margin: 0 auto 10px auto;
+    width: 120px;
+    height: 47px;
+    overflow: hidden;
+    background: url(../img/level.png) 0 0 no-repeat;
+    }
+#features article p.level-01{background-position: 0 -47px;}
+#features article p.level-02{background-position: 0 -94px;}
 .culture .container{position:relative;}
 .line{ position:absolute; top:41px; left:228px; z-index:999;}
+article  .line, .product01 .line, .product-down .line{height: 1px;background: #dddedf;width: 100%;position: relative;top:0;left: 0;}
+.product-down .line{margin-bottom: 20px;}
 .culture h2{ font-weight:normal; font-size:41px; line-height:125px; margin:0; padding-right:0;}
 .culture .span3 { margin-top:30px; margin-left:0; width:240px; }
 .culture .span9 p{  font-size:23px; line-height:normal; padding:50px 0 0 24px;}
@@ -162,12 +203,185 @@ h3{ font-size:20px; color:#36495a; font-weight:normal; padding:0; margin:0; line
 	min-height: 160px;
 	color: #fff; }
 .client ul{ list-style:none; margin:0; padding:0; display:block; height:160px;  }
+/*产品页*/
+.product01, .product02{
+    background: #eff1f4;
+    padding: 12px 0 6px;
+}
+.product02{
+    background: #797e8b;
+    padding: 20px 0;
+    }
+.product02 h2{color: #fff;}
+.product02 p{color: #ccc;}
+.product01 h2{
+    font-size: 16px;
+    color: #333;
+    font-family: "黑体";
+    }
+.product01 h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    }
+.des{position: relative;}
+.des dt{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    }
+.des dd{
+    padding-left: 120px;
+    }
+.phone-01, .phone-02{
+    margin-bottom: -157px;
+    width: 318px;
+    height: 579px;
+    border: 0 none;
+    top:13px;
+    max-width: 100%;
+    vertical-align: middle;
+    background: url(../img/phone-01.jpg) 0 0 no-repeat;
+    background-size: contain;
+    }
+.phone-02{
+    margin-bottom: -54px;
+    }
+.phone-02{
+    background: url(../img/phone-02.jpg) 0 0 no-repeat;
+    width: 700px;
+    height: 711px;
+    background-size: contain;
+    }
+.product02 .s-3{
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #ccc;
+    }
+.span6-r{
+    margin-top: 180px;
+    }
+.pic{
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+    background: url(../img/p-01.png) 0 0 no-repeat;
+    margin: 0 auto;
+    }
+.pic01{
+    background-position: 0 -61px;
+    }
+.pic02{
+    background-position: 0 -122px;
+    }
+.product03{
+    background: #fff;
+    }
+.product03 .span4{
+    margin-top: 60px;
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    }
+.product03 .span8{
+    float: right;
+    position: relative;
+    z-index: 2;
+    }
+.product-down{
+    background: #f1f7fe;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 0;
+    }
+.android, .symbian{
+    float: left;
+    background: url(../img/android.png) 0 bottom no-repeat;
+    height: 180px;
+    width: 117px;
+    background-size: contain;
+    }
+.symbian{
+    background: url(../img/sym.png) 0 bottom no-repeat;
+    }
+.t-d-c{
+    float: right;
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+}
+.featurette {
+padding-top: 120px;
+overflow: hidden;}
+/*关于我们*/
+.about-new{
+    background: #edf1f4;
+    padding-top: 30px;
+    }
+.about-new h2{
+    font-family: "黑体";
+    color: #333;
+    }
+
+.time_event{background: url(../img/about-bg02.png) -25px top repeat-y;  position: relative;color: #666;line-height: 30px;background-size: 100%;}
+.time_event ul{margin: 0;padding-top: 25px;}
+.time_event .font18{font-size: 30px;font-weight: bold;color: #3841c3;}
+.time_event li{margin-bottom: 15px;overflow: hidden;}
+
+.time_event .time01,.time_event .time02,.time_event .time03,.time_event .time04{display:inline-block;background: url(../img/round.png) center 0 no-repeat;overflow: hidden;max-width: 100%;}
+.time_event .time01{width: 32px;height: 32px;background-position: center 0;}
+.time_event .time02{width: 16px;height: 16px;background-position: center -38px;}
+.time_event .time03{width: 12px;height: 12px;background-position: center -69px;}
+.time_event .time04{width: 32px;height: 32px;background-position: center -89px;}
+
+
+[class*="span"] {
+    float: left;
+    margin-left: 10px;
+    min-height: 1px;
+}
+.time_event .span1{text-align: right;max-width: 70px;}
+.time_event .center{text-align: center;width: 32px;}
+.time_event .span7{margin-left: 5px;max-width: 700px;}
+
+.three_column .trb .arrow,.three_column .trg .arrow,.three_column .trr .arrow{ position:absolute;left: -5px;top:5px;width:7px;height: 9px; }
+.three_column .trb .arrow{background-position: 0 -777px;}
+.three_column .trg .arrow{background-position: 0 -875px;}
+.three_column .trr .arrow{background-position: 0 -821px;}
+
+
+.tabbable{
+    background:#fff url("../img/about-bg.png") repeat-y;
+    }
+.nav-tabs{
+    margin-bottom: 0;
+    }
+.tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a{
+    min-width: 195px;
+    }
+.nav li{
+    padding-top: 0;
+    margin-top: -1px;
+    }
+.tabs-left > .nav-tabs > li > a{
+    border-radius: 0;
+    }
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover, .tabs-left > .nav-tabs .active > a:focus{
+    border-color:#f4f4f4 #ffffff #f4f4f4 #ffb800;
+    border-left: 3px solid #ffb800;
+    color: #3366cc;
+    }
+.tabs-left > .nav-tabs{border: none;}
+.nav-tabs > li > a{-padding: 18px 0;}
+.tab-content{padding: 30px 30px 30px 12px;min-height: 400px;}
 /*.client ul li{  margin-right:20px; width:20%; display:table-cell; text-align:center; vertical-align:middle;}*/
 
 .modulecon{ background:#f5f6f7; margin-bottom:20px;}
 .about .span2{
     text-align: center;
     }
+
 .bottom-modules {
 	padding:34px 0;
 	text-align:center;
@@ -191,7 +405,7 @@ h3{ font-size:20px; color:#36495a; font-weight:normal; padding:0; margin:0; line
 }
 .bottom-modules h4 {
 	color:#363737;
-	font-size:24px;
+	font-size:14px;
 	line-height:41px;
 	font-weight:normal;
 	font-family:"FrutigerLTW01-45Light";
@@ -202,7 +416,7 @@ h3{ font-size:20px; color:#36495a; font-weight:normal; padding:0; margin:0; line
 	font-family:"FrutigerLTW01-55Roman";
 }
 .bottom-modules a.learn-more {
-	font-size:15px;
+	font-size:12px;
 	line-height:41px;
 	color:#318ce6;
 	font-family:"FrutigerLTW01-55Roman";
@@ -889,7 +1103,7 @@ footer li {
 }
 footer li a {
 	color:#9b9b9b;
-	font-size:11px;
+	font-size:12px;
 	font-family: 'Lato', sans-serif;
 	font-weight:400;
 }
@@ -951,7 +1165,7 @@ footer h6 {
 .sequence-list .span6 { position:absolute; left:0; top:0;}
 .sequence-list .span5 { position:absolute; right:0; top:0;}
 
-.home-header { z-index:1;}
+.home-header { z-index:1; }
 .app-tray-cont { position:relative; z-index:3;}
 
 
@@ -988,6 +1202,15 @@ footer h6 {
 		padding-right:20px !important;
 		width:19%;
 	}
+    .product03 .span4{
+        width: 280px;
+    }
+    .product03 .span8{
+        margin-top: 60px;
+    }
+    .phone-02{
+        height: 579px;
+    }
 	
 }
 @media(max-width:984px){
@@ -997,7 +1220,6 @@ footer h6 {
 }
 @media (max-width: 979px) {
 	.container.app-tray-cont {
-		
 		width:100% !important;
 	}
 	.header.home-header h2{ font-size:36px; text-align:center;}
@@ -1027,7 +1249,7 @@ footer h6 {
 	.win-google a { margin-right:20px; float:none; display:inline-block;}
 	#app-tray ul { text-align:center;}
 	#app-tray ul li { float:none !important; display:inline-block;}
-	#app-tray .row a { width:160px; float:none; display:inline-block;
+	#app-tray .row a { width:160px; float:none; display:inline-block;}
 	
 }
 @media (max-width: 820px) {
@@ -1315,19 +1537,23 @@ footer h6 {
 @media(max-width:780px) {
 	.client li { margin:0 auto;	margin-top:20px; margin-bottom:20px; margin-right:0 !important;	}
 	.home-header { position:relative; overflow:hidden;}
+    .product03 .span4{ position: relative;}
 }
 @media(max-width:768px) {
 	.header h2 { margin-top:20px;}
 	.win-google { text-align:center; padding-bottom:15px; clear:both;}
 	.win-google a img { margin:0 !important;}
 	.phone-nq { margin:0 auto;}
+    .phone-02{height: 470px;}
 }
 @media(max-width:767px) {
 	.header.home-header .aim-phone img { width:190px;}
+    .phone-02{height: 380px;}
 }
 @media(max-width:580px) {
 	#app-tray figure { width:120px;}
 	#app-tray .row a { width:120px;}
+    .phone-02{height: 360px;}
 }
 @media(max-width:480px) {
 	.section-3rd .span5 h3 { font-size:22px;}
@@ -1339,8 +1565,11 @@ footer h6 {
 	.section-1st p { font-size:14px;}
 	.section-1st h3 { font-size:18px;}
 	#app-tray .row li#all-products {
-		display:none;	
-	}	
+		display:none;
+	}
+    .android, .symbian, .t-d-c{float: none;margin-bottom: 20px;}
+    .symbian{height: 50px;}
+    .phone-02{height: 300px;}
 }
 @media(max-width:320px){
 	.header.home-header h2 { font-size: 24px; line-height:28px;}
@@ -1350,6 +1579,7 @@ footer h6 {
 	#app-tray ul li#all-products { display:none;}
 	.navbar-inner { padding-left:0; padding-right:10px;}
 	.img-circles li { margin-right: 0; width: 100px;}
+    .phone-02{height: 250px;}
 }
 
 

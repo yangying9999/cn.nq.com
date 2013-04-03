@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v2.3.1
+ * Bootstrap v2.3.0
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -231,7 +231,7 @@ body {
 }
 
 a {
-  color: #0088cc;
+  color: #686868;
   text-decoration: none;
 }
 
@@ -4354,33 +4354,34 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar {
-     -overflow: visible;
-     -position: absolute;
-     -width: 100%;
+	position:absolute;
+	width:100%;
+  *position: relative;
+  *z-index: 2;
+  /*margin-bottom: 20px;*/
+  overflow: visible;
 }
-.navtop{
-    position: relative;
-    height: 30px;
-    line-height: 30px;
-    text-align: right;
-    background: #e7e7e7;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #dcdcdc;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    color: #5b7d97;
-    font-family: tahoma;
-}
-.navtop a{
-    font-size: 12px;
-    color: #5b7d97;
-}
+
 .navbar-inner {
-  min-height: 60px;
+  min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
+ /* background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);*/
 }
 
 .navbar-inner:before,
@@ -4395,6 +4396,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .container {
+  /*width: auto;*/
 }
 
 .nav-collapse.collapse {
@@ -4421,11 +4423,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
-  color: #777777;
+  color: #fff;
 }
 
 .navbar-link {
-  color: #777777;
+  color: #fff;
 }
 
 .navbar-link:hover,
@@ -4532,11 +4534,11 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+  /*position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
 }
 
 .navbar-fixed-top .navbar-inner,
