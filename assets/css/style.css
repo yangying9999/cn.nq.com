@@ -262,7 +262,7 @@ article  .line, .product01 .line, .product-down .line{height: 1px;background: #d
 .span6-r{
     margin-top: 180px;
     }
-.pic{
+.product02 .pic{
     width: 46px;
     height: 46px;
     overflow: hidden;
@@ -328,6 +328,7 @@ overflow: hidden;}
 .time_event ul{margin: 0;padding-top: 25px;}
 .time_event .font18{font-size: 30px;font-weight: bold;color: #3841c3;}
 .time_event li{margin-bottom: 15px;overflow: hidden;}
+.time_event li.last{height:32px;overflow: hidden;}
 
 .time_event .time01,.time_event .time02,.time_event .time03,.time_event .time04{display:inline-block;background: url(../img/round.png) center 0 no-repeat;overflow: hidden;max-width: 100%;}
 .time_event .time01{width: 32px;height: 32px;background-position: center 0;}
@@ -342,6 +343,8 @@ overflow: hidden;}
     min-height: 1px;
 }
 .time_event .span1{text-align: right;max-width: 70px;}
+.row-fluid .span1{width: 70px;}
+.row-fluid [class*="span"]{margin-left: 19px;}
 .time_event .center{text-align: center;width: 32px;}
 .time_event .span7{margin-left: 5px;max-width: 700px;}
 
@@ -350,6 +353,143 @@ overflow: hidden;}
 .three_column .trg .arrow{background-position: 0 -875px;}
 .three_column .trr .arrow{background-position: 0 -821px;}
 
+/*新闻*/
+.news{
+    background: #d4d8df;
+    font-size: 12px;
+    line-height: 22px;
+}
+.news h2{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.news h3,.news h4{
+    font-size: 14px;
+    color: #000;
+    font-family: "宋体";
+}
+.new-list h4 span{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+.new-list .media{
+    font-size: 13px;
+}
+.path{
+    padding: 40px 0 10px 0;
+}
+.media-body a{
+    color: #336699;
+}
+.bs-docs-example{
+    background: #fff;
+}
+.tab-pane .span9{
+    position: relative;
+    padding: 20px 30px 150px 20px;
+    background: #fff;
+    border-right: 1px solid #e6e5e5;
+}
+.back-list-d{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.back-list-d a, .back-list a{
+    color: #336699;
+}
+.tab-pane .span3{
+    padding: 20px 20px 0 20px;
+    background: #fafafa;
+    margin-left: 0;
+}
+.right-nav ul{margin: 0;}
+.right-nav .nav-li-li ul{margin-left: 25px;}
+.bs-docs-example .tab-content{
+    padding: 0;
+    background: #fafafa;
+}
+.bs-docs-example .nav-tabs{
+    background: #eeecec;
+    border-bottom: 1px solid #eeecec;
+}
+.bs-docs-example .nav li{
+    margin-top: 0;
+}
+.bs-docs-example .nav-tabs > li > a{
+    border-radius: 0;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus{
+    border-color: #fff;
+}
+.bs-docs-example .nav-tabs > li > a, .nav-pills > li > a{
+    padding: 10px 25px;
+}
+.bs-docs-example .nav-tabs{
+    -border: none;
+}
+.right-nav ul li.on {
+    background-position: -273px 7px;
+    color: #333;
+}
+.right-nav ul li.on a{color: #000;}
+.right-nav ul li {
+    background: url("../img/nav-n-bg.png") left 7px no-repeat;
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 1px;
+    text-indent: 20px;
+    overflow: hidden;
+    max-width: 270px;
+}
+.right-nav ul li.nav-li-li{
+    background: none;
+}
+.right-nav .nav-li-li ul li{
+    background: url("../img/nav-n-bg.png") -547px 7px no-repeat;
+}
+.new-list .nav-tabs{
+    background: none;
+    border: none;
+    margin-bottom: 20px;
+}
+.new-list li{
+    float: right;
+    background: url(../img/new-p-l-icon.png) 0 0 no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    }
+.new-list li.list-n, .new-list li.active{
+    background: url(../img/new-p-l-icon.png) 0 -20px no-repeat;
+}
+.new-list .nav-tabs li a{
+    background:url(../img/new-p-l-icon.png) 0 0;
+    margin-top: -1px;
+    width: 20px;
+    height: 20px;}
+.new-list .nav-tabs li.list-n  a{
+    padding: 0;
+    background-position:  0 -60px;
+}
+.new-list .nav-tabs li.list-n.active  a{
+    background-position:  0 -40px;
+}
+.new-list .nav-tabs li.pic.active  a{
+    background-position: 0 0 ;
+}
+.new-list .nav-tabs li.pic a{
+    padding: 0;
+    background-position:  0 -20px;
+}
+
+.new-list li.pic{
+    background-position: 0 0 ;
+    margin-right: 10px;
+}
+.new-list .tab-content{background: #fff;}
 
 .tabbable{
     background:#fff url("../img/about-bg.png") repeat-y;
@@ -373,7 +513,6 @@ overflow: hidden;}
     color: #3366cc;
     }
 .tabs-left > .nav-tabs{border: none;}
-.nav-tabs > li > a{-padding: 18px 0;}
 .tab-content{padding: 30px 30px 30px 12px;min-height: 400px;}
 /*.client ul li{  margin-right:20px; width:20%; display:table-cell; text-align:center; vertical-align:middle;}*/
 
