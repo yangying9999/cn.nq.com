@@ -18,8 +18,8 @@
 <!-- <script src="assets/js/modernizr.js"></script> -->
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>  
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+<!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Fav and touch icons -->
@@ -31,25 +31,38 @@
 <body>
 <div class="navbar">
   <div class="navtop">
-    <div class="container"> <a href="#">24/7/365 即时线上客服</a> | <a href="#">中文</a> </div>
+    <div class="container">
+      <ul>
+        <li><a href="#">中文</a> </li>
+        <li><a href="#">24/7/365 即时线上客服</a> </li>
+      </ul>
+    </div>
   </div>
   <div class="navbar-inner">
     <div class="container">
-      <div id="navbar-example" class="navbar navbar-static">
-        <div>
-          <div class="container" style="width: auto;"> <a class="logo" href="#"><img src="assets/img/nqlogo.png" width="131" height="30" alt="NQ" /></a> <a class="brand" href="#">网秦安全</a> <a class="brand" href="#">私密空间</a> <a class="brand" href="#">手机卫士</a>
-            <div class="navbar-text pull-right">
-              <div class="personal-products" id="nav">
-                <ul>
-                  <li> <a class="active" href="http://www.miaov.com"><span>个人产品</span></a> <span style="display: none;" class="float_layer"> <a href="http://www.miaov.com"><span>产品1</span></a> <a href="http://www.miaov.com"><span>产品1</span></a> <a href="http://www.miaov.com"><span>产品1</span></a> <a href="http://www.miaov.com"><span>产品1</span></a> </span> </li>
-                </ul>
-                <a href="#">产品下载</a> <a href="#"> 求助中心</a> <a href="#"> 在线检测</a> <a href="#">支付中心</a> </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1 class="logo"><a href="http://cn.nq.com"><img src="assets/img/nqlogo.png" width="122" height="50" alt="NQ" /></a></h1>
+      <ul class="brand">
+        <li><a href="products/mobilesecurity/index.html">网秦安全</a> </li>
+        <li><a href="#">私密空间</a> </li>
+        <li><a href="http://weishi.nq.com/">手机卫士</a></li>
+      </ul>
+      <ul class="navbar-text">
+        <li>
+            <a href="" class="more">个人产品</a>
+          <ul>
+            <li><a href="">个人产品</a></li>
+            <li><a href="">个人产品</a></li>
+            <li><a href="">个人产品</a></li>
+            <li><a href="">个人产品</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.netqin.com/products/">产品下载</a></li>
+        <li><a href="#"> 求助中心</a></li>
+        <li><a href="http://scan.nq.com/"> 在线检测</a></li>
+        <li><a href="http://pay.netqin.com/">支付中心</a></li>
+      </ul>
     </div>
-   </div>
+  </div>
 </div>
 <!-- End top bar  
     ================================================== -->
@@ -63,29 +76,29 @@
       <div class="span4">
         <article id="whats-new">
           <h3>家庭与个人用户产品</h3>
-          <p>提供全天候无间歇的数位移动安全保护</p>
+          <p class="color01">提供全天候无间歇的数位移动安全保护</p>
         </article>
       </div>
       <div class="span4">
         <article id="sync-space">
           <h3>即时安全播报</h3>
-          <p>提供即时手机病毒播报，全面为你的安全把关</p>
+          <p class="color01">提供即时手机病毒播报，全面为你的安全把关</p>
           <p class="line"></p>
-          <p class="pull-left">病毒：开机自启动，伪装成其他软件，在后台发送短信xxx</p>
-          <p class="pull-left">主要危害</p>
+          <p class="name">套餐窃贼 a.expense.Extension.a <br>
+          病毒主要危害：资费消耗</p>
           <p class="level"></p>
-          <p  class="pull-left"> <a href="#"> &gt; &gt;立即查看最新病毒列表</a> <a href="#" class="more">&gt; &gt;了解更多</a> </p>
+          <p><a href="#" class="more">&gt; &gt;了解更多</a> </p>
         </article>
       </div>
       <div class="span4">
         <article id="">
-          <h3>试用版下载</h3>
-          <p>网秦提供即时手机病毒免费试用30天</p>
+          <h3>热门产品下载</h3>
+          <p class="color01">网秦提供及时手机全天候安全服务</p>
           <p class="line"></p>
           <ul class="product">
-            <li><a href="#">网秦安全 免费试用30天</a></li>
-            <li><a href="#">私密空间 立即续约</a></li>
-            <li><a href="#">手机卫士 立即续约</a></li>
+            <li><a href="#">网秦安全</a><a href="#" class="down">立即下载</a></li>
+            <li><a href="#">私密空间</a><a href="#" class="down">立即下载</a></li>
+            <li><a href="#">网秦卫士</a><a href="#" class="down">立即下载</a></li>
             <li><a href="#">推广链接</a></li>
           </ul>
           <p><a href="#" class="more">&gt; &gt;了解更多</a></p>
@@ -94,13 +107,13 @@
       <div class="span4">
         <article id="">
           <h3>网秦双CEO入选《财富精英》</h3>
-          <p>网秦联席CEO林宇(35岁)和奥马尔·汗(37岁)入选"移动互联网精英"</p>
+          <p class="color01">网秦联席CEO林宇(35岁)和奥马尔·汗(37岁)入选"移动互联网精英"</p>
         </article>
       </div>
       <div class="span4">
         <article id="virus" style="background-image: none;">
           <h3>警报：手机木马伪装"京东商城"</h3>
-          <p>提供即时手机病毒报告，为你的安全把关</p>
+          <p class="color01">提供即时手机病毒报告，为你的安全把关</p>
           <p class="pull-left">对于近期下载"京东商城"软件的用户，网秦手机安全专家也提示大家不必惊慌，目前网秦安全6.2已可完全查杀该恶意软件。<br>
             另外，他建议，手机用户平时应该在手机中安装一款如网秦安全等的专业安全产品... <a href="#" class="more">&gt; &gt;了解更多</a> </p>
         </article>
@@ -118,15 +131,13 @@
     ================================================== -->
 <div class="container-fluid culture">
   <div class="container">
-    <div class="row"> 
+    <div class="row-fluid">
       <!--<img src="assets/img/line.jpg" class="line">-->
       <div class="span3">
-        <h2>Our culture</h2>
+        <h2></h2>
       </div>
       <div class="span9">
-        <p>With offices in Dallas and Beijing, NQ Mobile is thanks 
-          to the team full of enthusiastic people making the smartphone 
-          world a more secure place. One lovingly-built app at a time.</p>
+        <p>作为国内首家专注于手机安全的网秦，一方面根据手机安全市场的变化采取精准研发的势头，另一方面采用国际通行的免费+增值模式，不到数年里在全世界100多个国家地区拥有2亿的用户，占有海内外绝大部分市场的他们，庞大的用户群体就很说明一个问题，只有将技术和服务摆在第一位，才能在当前波诡云谲的市场中占有绝大的主动。</p>
       </div>
     </div>
   </div>
@@ -136,7 +147,7 @@
 
 <div class="container-fluid client">
   <div class="container">
-    <div class="row"> 
+    <div class="row-fluid">
       <!--div class="span12">
         <ul>
           <li><img src="assets/img/streetjournal.jpg"></li>
@@ -146,6 +157,12 @@
           <li><img src="assets/img/killerstartups.jpg"></li>
         </ul>
       </div-->
+        <div class="span3">
+        我们让公司逐渐茁壮，并与我们
+        的夥伴们一起为全球242百万的移动用户
+        提供一个安全的数位移动环境而努力。
+        </div>
+        <div class="span9">
       <section class="slider">
         <div class="flexslider carousel">
           <ul class="slides">
@@ -257,6 +274,7 @@
           </ul>
         </div>
       </section>
+        </div>
     </div>
   </div>
 </div>
@@ -291,7 +309,8 @@
 <div class="container">
   <footer>
     <div class="row ul-list about">
-      <div class="span2 offset1">
+      <div class="span3">
+          <div class="box">
         <h6><a href="#">手机端产品</a></h6>
         <ul>
           <li><a href="#">网秦安全</a></li>
@@ -301,24 +320,30 @@
           <li><a href="#">网秦卫士</a></li>
           <li><a href="#">通讯录备份</a></li>
         </ul>
+          </div>
       </div>
-      <div class="span2">
+      <div class="span3">
+          <div class="box">
         <h6><a href="#">网秦集团</a></h6>
         <ul>
           <li><a href="#">飞流公司</a></li>
           <li><a href="#">集团子公司2入口</a></li>
           <li><a href="#">集团子公司3入口</a></li>
         </ul>
+          </div>
       </div>
-      <div class="span2">
+      <div class="span3">
+          <div class="box">
         <h6><a href="#">投资者关系</a></h6>
         <ul>
           <li><a href="#">投资者关系1</a></li>
           <li><a href="#">投资者关系2</a></li>
           <li><a href="#">投资者关系3</a></li>
         </ul>
+          </div>
       </div>
-      <div class="span2">
+      <div class="span3">
+          <div class="box">
         <h6><a href="#">有官网秦</a></h6>
         <ul>
           <li><a href="#">网秦简介</a></li>
@@ -328,41 +353,16 @@
           <li><a href="#">联系我们</a></li>
           <li><a href="#">加入我们</a></li>
         </ul>
+          </div>
       </div>
     </div>
-    <div class="row">
-      <div class="span11 offset1 footer-right">
-        <ul>
-          <li><a class="black" href="#">English</a></li>
-          <li><a  class="ass" href="#">Change language</a></li>
-          <li><a href="#">Español</a></li>
-          <li><a href="#">Deutsch</a></li>
-          <li><a href="#">Français</a></li>
-          <li><a href="#">Polski</a></li>
-          <li><a href="#">Português (Brasil)</a></li>
-          <li><a href="#">Русский</a></li>
-          <li><a href="#">日本語</a></li>
-          <li><a href="#">中文（简体）</a></li>
-          <li><a href="#">中文（繁體）</a></li>
-          <li><a href="#">한국어</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row footer-bottom">
-      <ul>
-        <li>Made in Dallas Texas &nbsp;&nbsp;&nbsp;</li>
-        <li><a href="#"><img src="assets/img/twiter.png" width="20" height="16" alt="twiter"></a></li>
-        <li><a href="#"><img src="assets/img/facebook.png" width="20" height="16" alt="facebook"></a></li>
-      </ul>
-    </div>
-  </footer>
+   </footer>
 </div>
 <!-- Le javascript  
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 
-<script src="assets/js/scale.fix.js"></script> 
-<script src="assets/js/jquery-1.9.1.min.js"></script> 
+<script src="assets/js/jquery-1.9.1.min.js"></script>
 <script src="assets/js/sequence.jquery-min.js"></script> 
 <script src="assets/js/sequencejs-options.modern-slide-in.js"></script> 
 <!-- FlexSlider --> 
@@ -381,8 +381,6 @@ $(window).load(function(){
   });
 });
 </script> 
-<script src="assets/js/jquery.easing.js"></script> 
-<script src="assets/js/bootstrap-dropdown.js"></script> 
-<script src="assets/js/top-menu.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script>
 </body>
 </html>
